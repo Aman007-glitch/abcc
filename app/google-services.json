@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "665597891697",
+    "project_id": "login-438f3",
+    "storage_bucket": "login-438f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665597891697:android:f6cc8b1eb06c90daee77d0",
+        "android_client_info": {
+          "package_name": "com.example.Nexus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqQxWpkWcBXs66EU-b052cVOj9sNFuGuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
