@@ -12,15 +12,7 @@ package com.example.Nexus
     class MainActivity : AppCompatActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            val prefs: SharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
-            val isFirstTimeUser = prefs.getBoolean("isFirstTimeUser", true)
-
-            // If it's the first time, show onboarding screens
-            if (isFirstTimeUser) {
-                val intent = Intent(this, onboarding::class.java)
-                startActivity(intent)
-                finish() // Close MainActivity to prevent going back to it
-            } else {
+           
             enableEdgeToEdge()
             setContentView(com.example.Nexus.R.layout.activity_main)
             ViewCompat.setOnApplyWindowInsetsListener(findViewById(com.example.Nexus.R.id.main)) { v, insets ->
@@ -29,6 +21,6 @@ package com.example.Nexus
                 insets
             }}
         }
-    }
+    
 
 
