@@ -1,4 +1,4 @@
-package com.example.Nexus
+package com.example.nexus
 
 import android.content.Intent
 import android.os.Bundle

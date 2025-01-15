@@ -2,23 +2,58 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/black">
+    android:id="@+id/main">
 
+    <!-- TextView to show instruction for the user -->
     <TextView
-        android:layout_width="400dp"
-        android:layout_height="317dp"
-        android:layout_marginTop="160dp"
-        android:text="@string/letsexplore"
-        android:textColor="@color/white"
-        android:textSize="50sp"
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter new hotspot password:"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- EditText for entering the new hotspot password -->
+    <EditText
+        android:id="@+id/newPasswordEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="New Hotspot Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instructionText"
+        android:padding="10dp" />
+
+    <!-- Button to change the hotspot password -->
+    <Button
+        android:id="@+id/changeHotspotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/newPasswordEditText" />
+
+    <!-- TextView to display success or failure message -->
+    <TextView
+        android:id="@+id/statusMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/changeHotspotPasswordButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

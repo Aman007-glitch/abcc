@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.Nexus"
+    namespace = "com.example.nexus"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.Nexus"
+        applicationId = "com.example.nexus"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -43,7 +43,7 @@ android {
 }
 
 dependencies {
-
+    implementation("io.appwrite:sdk-for-android:6.1.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -55,4 +55,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
+
 }

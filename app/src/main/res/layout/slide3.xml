@@ -61,7 +61,7 @@
                 android:background="@drawable/next"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Register"
-                android:textColor="@color/black"
+                style="@style/CustomButtonStyle"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

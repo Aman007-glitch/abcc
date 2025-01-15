@@ -1,4 +1,4 @@
-package com.example.Nexus
+package com.example.nexus
 
 import android.content.Context
 import android.os.Bundle
@@ -28,7 +28,7 @@ class slide12 : Fragment() {
         val view = inflater.inflate(R.layout.slide2, container, false)
 
         view.findViewById<Button>(R.id.next1).setOnClickListener {
-            onboardingActivity.replaceFragment(slide13(), isLastSlide = true)
+            onboardingActivity.replaceFragment(slide13(),2)
         }
 
         return view
