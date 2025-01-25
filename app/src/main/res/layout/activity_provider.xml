@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/providerLayout">
+
+    <!-- TextView to show status (e.g., waiting for clients, hotspot active) -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting for clients to connect..."
+        android:textSize="18sp"
+        android:padding="10dp"/>
+
+    <!-- Button to start the hotspot and advertise service -->
+    <Button
+        android:id="@+id/startHotspotButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Hotspot"
+        android:textSize="16sp"/>
+
+    <!-- Button to stop the hotspot -->
+    <Button
+        android:id="@+id/stopHotspotButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Hotspot"
+        android:textSize="16sp"
+        android:enabled="false"/>
+</LinearLayout>

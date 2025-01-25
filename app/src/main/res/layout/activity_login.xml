@@ -40,16 +40,16 @@
             android:orientation="vertical"
             android:layout_marginBottom="80dp"
             android:background="@color/white">
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"/>
             <ProgressBar
                 android:id="@+id/progressBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
+                android:layout_marginRight="30dp"
                 android:layout_gravity="center"/>
-
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
 
 
 
@@ -72,29 +72,53 @@
                 android:id="@+id/emailtxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email and Username"
-                android:textColorHint="@color/grey"
-                android:textSize="15dp"
-                android:inputType="textEmailAddress"
                 android:layout_marginRight="79dp"
+                android:drawableEnd="@drawable/users"
                 android:fontFamily="@font/poppins_medium"
+                android:hint="Email or Username"
+                android:inputType="textEmailAddress"
                 android:textColor="@color/black"
-                android:drawableEnd="@drawable/users"/>
+                android:textColorHint="@color/grey"
+                android:textSize="15dp" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="45dp"/>
-            <EditText
-                android:id="@+id/passtxt"
-                android:layout_width="match_parent"
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:textColorHint="@color/grey"
-                android:textSize="15dp"
-                android:layout_marginRight="79dp"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="@color/black"
-                android:drawableEnd="@drawable/nosee"/>
+                android:layout_marginRight="79dp">
+
+                <!-- Eye Icon for Toggle Password Visibility -->
+
+                <EditText
+                    android:id="@+id/passtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingEnd="50dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/togglePasswordVisibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/nosee" />
+            </RelativeLayout>
+
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"/>
@@ -102,6 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:id="@+id/forgotpass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="forgot password?"
@@ -141,6 +166,7 @@
                     android:layout_marginLeft="55dp"
                     android:textSize="15dp"/>
                 <TextView
+                    android:id="@+id/gosignup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sign up"
